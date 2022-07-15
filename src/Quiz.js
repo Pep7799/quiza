@@ -69,12 +69,12 @@ const Quiz = () => {
       <div className="mx-auto my-6 font-extrabold text-2xl">Science Quiz</div>
 
       {/* 2. Current Score  */}
-      <div className="mx-auto my-6 font-bold text-2xl">Score: {score}</div>
+      <div className="mx-auto my-2 font-bold text-2xl">Score: {score}</div>
 
       {/* 3. Show results or show the question game  */}
       <div
-        className="mx-auto mt-4 mb-56 w-2/3 max-h-fit p-8 
-         border-0 rounded-lg shadow-xl bg-indigo-800 text-white text-center "
+        className="mx-auto mt-4 w-2/3 max-h-fit p-8 
+         border-0 rounded-lg shadow-xl bg-gradient-to-br from-black via-black to-yellow-900 text-white text-center "
       >
         {showResults ? (
           /* 4. Final Results */
@@ -110,7 +110,7 @@ const Quiz = () => {
                   <li
                     key={option.id}
                     onClick={() => optionClicked(option.isCorrect)}
-                    className={`mb-10 cursor-pointer bg-white text-indigo-700 rounded-xl  hover:font-bold
+                    className={`mb-4 cursor-pointer bg-white text-blue-800 rounded-xl  
                       ${correct && option.isCorrect ? "bg-green-700 " : ""}
                       ${notCorrect && option.isCorrect ? "bg-green-700 " : ""}
                     
@@ -124,8 +124,8 @@ const Quiz = () => {
               })}
             </ul>
             <div
-              className="bg-red-600 w-2/3 mt-4 cursor-pointer 
-              transition duration-150 delay-100 ease-in-out hover:scale-110 rounded-lg mx-auto text-lg mb-10 font-bold"
+              className="bg-red-600 w-2/3 mt-6 cursor-pointer 
+              transition duration-150 delay-100 ease-in-out hover:scale-110 rounded-lg mx-auto text-lg mb-2 font-bold"
               onClick={() => quit()}
             >
               Quit
@@ -133,8 +133,8 @@ const Quiz = () => {
           </div>
         )}
       </div>
-      <div className="bg-indigo-800 w-full text-center text-white font-bold ">
-        Copyright © Created by Remzeey and Pearl{" "}
+      <div className="bg-gradient-to-r from-indigo-300 to-purple-400 w-full text-center text-white font-bold lg:h-6 mt-36 ">
+        Copyright © Created by Remzeey and Pearl
       </div>
     </div>
   );
