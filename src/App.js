@@ -22,7 +22,7 @@ const App = () => {
       transition duration-150 delay-100 ease-in-out hover:scale-110 hover:text-black-800 text-center w-24 h-8 rounded-lg shadow-lg mb-0 font-bold bg-gradient-to-r from-green-200 via-green-400 to-green-500  cursor-pointer text-white">
         <Link to="/quiz" >Start quiz</Link>
       </div>
-      <div className="bg-gradient-to-r from-indigo-300  to-purple-400 mb-4 mt-32 w-full text-center text-white font-bold ">
+      <div className="bg-purple-700 mb-4 mt-32 w-full text-center text-white font-bold ">
         Copyright © Created by Remzeey and Pearl
       </div>
     </div>

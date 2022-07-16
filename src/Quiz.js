@@ -133,7 +133,7 @@ const Quiz = () => {
           </div>
         )}
       </div>
-      <div className="bg-gradient-to-r from-indigo-300 to-purple-400 w-full text-center text-white font-bold lg:h-6 mt-36 ">
+      <div className="bg-purple-700 w-full text-center text-white font-bold lg:h-6 mt-36 ">
         Copyright © Created by Remzeey and Pearl
       </div>
     </div>
